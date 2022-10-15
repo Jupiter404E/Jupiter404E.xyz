@@ -1,0 +1,50 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+    background-color: #00111c;
+}
+.wrapper {
+    margin-top: 43vh;
+    display: grid;
+    place-items: center;
+}
+  
+.typing-demo {
+    width: 30ch;
+    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    color: #fff;
+    font-family: monospace;
+    font-size: 4em;
+}
+  
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
+
+.preview {
+    height: 10em;
+    position: relative 
+}
+.preview a {
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    font-family: monospace;
+    font-size: 35px;
+    top: 3vh;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
